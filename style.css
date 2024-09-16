@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+/* Para navegadores como Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body{
+    height: 100dvh;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./img/4k_wukong.jpg);
+    background-repeat: cover;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.container__login{
+    padding: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    transition: 1s;
+}
+
+.container__login:hover{
+    backdrop-filter: blur(100px);
+}
+
+.container__login__titulo{
+    color:  rgb(248, 248, 248);
+    transition: 2s;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.container__login__titulo:hover{
+    color: aliceblue;
+    text-shadow: 0 0 0 8px white;
+    font-size: 30px;
+    cursor: default;
+}
+
+input{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    background-color: rgb(43, 43, 43);
+    color: aliceblue;
+    padding: 15px;
+    width: 250px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 1s;
+}
+
+input:hover{
+    font-size: 17px;
+    padding: 20px;
+}
+
+button{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+    background-color: rgb(255, 160, 0);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+}
